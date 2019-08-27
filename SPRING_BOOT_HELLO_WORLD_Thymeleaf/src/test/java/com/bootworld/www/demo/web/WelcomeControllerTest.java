@@ -39,7 +39,7 @@ public class WelcomeControllerTest {
                 .andExpect(content().string(containsString("Hello, ")));
 
         MvcResult mvcResult = resultActions.andReturn();
-        ModelAndView mv = mvcResult.getModelAndView();
+        ModelAndView modelAndView = mvcResult.getModelAndView();
 
     }
     @Test
